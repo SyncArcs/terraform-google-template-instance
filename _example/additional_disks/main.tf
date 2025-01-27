@@ -20,10 +20,10 @@ module "vpc" {
 ##### subnet module call.
 #####==============================================================================
 module "subnet" {
-  source       = "git::https://github.com/SyncArcs/terraform-google-subnet.git?ref=v1.0.0"
-  name         = "app"
-  environment  = "test"
-  subnet_names = ["subnet-a"]
+  source        = "git::https://github.com/SyncArcs/terraform-google-subnet.git?ref=v1.0.0"
+  name          = "app"
+  environment   = "test"
+  subnet_names  = ["subnet-a"]
   network       = module.vpc.vpc_id
   ip_cidr_range = ["10.10.1.0/24"]
 }
@@ -94,3 +94,4 @@ module "instance_template" {
     },
   ]
 }
+

@@ -32,3 +32,4 @@ output "metadata_fingerprint" {
   value       = module.instance_template.metadata_fingerprint
   description = "An identifier for the resource with format"
 }
+
