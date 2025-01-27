@@ -24,7 +24,6 @@ module "subnet" {
   name         = "app"
   environment  = "test"
   subnet_names = ["subnet-a"]
-  #  region        = "asia-northeast1"
   network       = module.vpc.vpc_id
   ip_cidr_range = ["10.10.1.0/24"]
 }
