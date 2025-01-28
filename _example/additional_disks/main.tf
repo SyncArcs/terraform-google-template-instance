@@ -8,7 +8,7 @@ provider "google" {
 ##### vpc module call.
 #####==============================================================================
 module "vpc" {
-  source                                    = "git@github.com:SyncArcs/terraform-google-vpc.git?ref=v1.0.1"
+  source                                    = "git::https://github.com/SyncArcs/terraform-google-vpc.git?ref=v1.0.1"
   name                                      = "app"
   environment                               = "test"
   routing_mode                              = "REGIONAL"

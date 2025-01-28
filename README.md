@@ -25,7 +25,7 @@ To use this module, include it in your Terraform configuration. Below is an exam
 ## Example: simple
 ```hcl
 module "simple_template" {
-  source               = "https://github.com/SyncArcs/terraform-googletemplate-instance.git"
+  source               = "git::https://github.com/SyncArcs/terraform-google-template-instance.git?ref=v1.0.0"
   name                 = "template"
   environment          = "test"
   stack_type           = "IPV4_ONLY"
@@ -49,7 +49,7 @@ module "simple_template" {
 ## Example: alias_ip_range
 ```hcl
 module "instance_template" {
-  source            = "https://github.com/SyncArcs/terraform-googletemplate-instance.git"
+  source            = "git::https://github.com/SyncArcs/terraform-google-template-instance.git?ref=v1.0.0"
   name              = "alias-ip-range"
   environment       = "test"
   instance_template = true
@@ -70,7 +70,7 @@ module "instance_template" {
 ## Example: additional_disks
 ```hcl
 module "instance_template" {
-  source            = "https://github.com/SyncArcs/terraform-googletemplate-instance.git"
+  source            = "git::https://github.com/SyncArcs/terraform-google-template-instance.git?ref=v1.0.0"
   name              = "additional-disks"
   environment       = "test"
   subnetwork        = module.subnet.subnet_id

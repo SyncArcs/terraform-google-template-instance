@@ -357,4 +357,3 @@ variable "enable_public_ip" {
   default     = false
   description = "public IP if enable_public_ip is true for the instance."
 }
-
